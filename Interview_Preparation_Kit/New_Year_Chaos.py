@@ -10,7 +10,7 @@ def minimumBribes(q):
     for i in range(len(q) - 1, -1, -1):  # Iterate over the maximum index to 0
         # Should not use q.index(i) since it is computationally too heavy for every iteration
 
-        # Left-side on the inequality indicates the number of bribes it tried,        
+        # Left-side on the inequality indicates the number of bribes it tried,
         # and right-side indicates how many times it got the bribes
         if (q[i] - (i + 1)) > 2:
             print("Too chaotic")
